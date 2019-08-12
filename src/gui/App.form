@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.App">
+  <grid id="27dc6" binding="mainPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="900" height="525"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <focusable value="false"/>
+      <maximumSize width="900" height="375"/>
+      <minimumSize width="900" height="375"/>
+      <opaque value="false"/>
+      <preferredSize width="900" height="375"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="706ae" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints/>
+        <properties>
+          <minimumSize width="365" height="354"/>
+          <preferredSize width="365" height="354"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="d33ec" binding="consoleScrollPane">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <autoscrolls value="true"/>
+              <horizontalScrollBarPolicy value="32"/>
+              <maximumSize width="2147483647" height="2147483647"/>
+              <verticalScrollBarPolicy value="22"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="95d54" class="javax.swing.JTextArea" binding="consoleTextArea">
+                <constraints/>
+                <properties>
+                  <autoscrolls value="false"/>
+                  <editable value="false"/>
+                  <focusTraversalPolicyProvider value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <lineWrap value="false"/>
+                  <minimumSize width="300" height="350"/>
+                  <preferredSize width="-1" height="-1"/>
+                  <tabSize value="4"/>
+                  <wrapStyleWord value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="f3cec" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="20" bottom="0" right="0"/>
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d85d" class="javax.swing.JLabel" binding="imageLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="(Image preview resized to 250x250)"/>
+              <verticalAlignment value="3"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+          <component id="1435a" class="javax.swing.JLabel" binding="image">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <grid id="a7ba9" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="50"/>
+                <preferred-size width="-1" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7da58" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Sector Scale"/>
+                </properties>
+              </component>
+              <component id="db1ae" class="javax.swing.JSlider" binding="scaleSlider">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <majorTickSpacing value="1"/>
+                  <maximum value="5"/>
+                  <minimum value="1"/>
+                  <paintLabels value="true"/>
+                  <paintTicks value="false"/>
+                  <paintTrack value="true"/>
+                  <snapToTicks value="true"/>
+                  <value value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="2be36" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="10" right="0"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="af463" class="javax.swing.JButton" binding="inputButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <focusable value="false"/>
+                  <text value="Input"/>
+                </properties>
+              </component>
+              <component id="51d3f" class="javax.swing.JButton" binding="generateButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <focusable value="false"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Generate"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="5a7" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="20" bottom="0" right="0"/>
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="6e8e" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="affe3" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="Red Value"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="6cb3d" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="eaee4" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="128-170"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="e1a46" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6b077" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="170-212"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a7030" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4cd7b" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="86-127"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="60b8c" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4d4cd" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="0-42"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="eece9" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="af8f" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="43-85"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a0322" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fa4e6" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="Block Type"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8fc8c" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6d0d" class="javax.swing.JLabel" binding="redValue0">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7f6a4" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f4338" class="javax.swing.JLabel" binding="redValue1">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8f3e9" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ef9f5" class="javax.swing.JLabel" binding="redValue2">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="6f0b3" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="37532" class="javax.swing.JLabel" binding="redValue3">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5709b" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d9145" class="javax.swing.JLabel" binding="redValue4">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8851a" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b9de2" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value="213-255"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="13bfd" layout-manager="FlowLayout" hgap="25" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c9259" class="javax.swing.JLabel" binding="redValue5">
+                <constraints/>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="2"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Procedural City Generator">
+    <output-path>$PROJECT_DIR$/out/artifacts/Procedural_City_Generator</output-path>
+    <root id="archive" name="Procedural City Generator.jar">
+      <element id="module-output" name="ProceduralCityGenerator" />
+      <element id="file-copy" path="C:/dev_64/JCG/LIB/Java3D/j3dcore.jar" />
+      <element id="file-copy" path="C:/dev_64/JCG/LIB/Colt/colt.jar" />
+      <element id="file-copy" path="C:/dev_64/JCG/LIB/Colt/concurrent.jar" />
+      <element id="library" level="project" name="core" />
+      <element id="file-copy" path="C:/dev_64/JCG/Jcg.jar" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="icons">
+        <element id="dir-copy" path="$PROJECT_DIR$/icons" />
+      </element>
+      <element id="directory" name="Input">
+        <element id="dir-copy" path="$PROJECT_DIR$/Input" />
+      </element>
+      <element id="directory" name="meshes">
+        <element id="dir-copy" path="$PROJECT_DIR$/meshes" />
+      </element>
+      <element id="directory" name="classes">
+        <element id="dir-copy" path="$PROJECT_DIR$/src/classes" />
+      </element>
+    </root>
+  </artifact>
+</component>

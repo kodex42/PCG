@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="core">
+    <CLASSES>
+      <root url="jar://C:/dev_64/JCG/LIB/Processing/core.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/La4j/la4j-0.4.9.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Java3D/j3dcore.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Java3D/j3dutils.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Java3D/vecmath.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Jama/Jama-1.0.2.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Colt/colt.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/Colt/concurrent.jar!/" />
+      <root url="jar://C:/dev_64/JCG/LIB/TC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://C:/dev_64/JCG/LIB/Java3D" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
